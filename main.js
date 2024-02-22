@@ -15,3 +15,14 @@ h1.style.fontSize = "50px";
 // getElementsByClassName
 const p1 = document.getElementsByClassName("p1");
 p1[0].innerHTML = "Ini diubah dari javascript";
+
+// querySelector
+const p4 = document.querySelector("#b p");
+
+// querySelectorAll
+const pAll = document.querySelectorAll("p");
+
+// example
+const sectionB = document.getElementById("b");
+const paragraph4 = sectionB.querySelector("p");
+paragraph4.style.backgroundColor = "orange";
