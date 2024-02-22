@@ -26,3 +26,21 @@ const pAll = document.querySelectorAll("p");
 const sectionB = document.getElementById("b");
 const paragraph4 = sectionB.querySelector("p");
 paragraph4.style.backgroundColor = "orange";
+
+// ========================== //
+// ==== DOM MANIPULATION ==== //
+// ========================== //
+const sectionA = document.querySelector("section#a");
+sectionA.innerHTML = "<div><h1>Hello World</h1></div>";
+sectionA.style.backgroundColor = "lightgreen";
+
+sectionA.setAttribute("attributeKey", "attributeValue");
+sectionA.getAttribute("attributeKey");
+sectionA.removeAttribute("attributeKey");
+
+sectionA.classList.add("className");
+sectionA.classList.remove("className");
+sectionA.classList.toggle("className"); // if exist, remove, if not, add
+sectionA.classList.item(0); // check by index
+sectionA.classList.contains("className"); // return true or false
+sectionA.classList.replace("oldClassName", "newClassName");
